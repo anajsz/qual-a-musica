@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    animation: background-color-change 12s linear infinite;
+    background-image: url('img3.png');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  
+
+  
+    background-color: #386641;
+    display: flex; /* Ativando o modelo de layout flex para alinhamento */
+    justify-content: center; /* Alinhando o conteúdo à direita */
+    align-items: center; /* Centralizando verticalmente */
+    height: 100vh; /* Usando a altura da viewport para centralizar verticalmente */
+}
+
+#content-container {
+    padding: 20px; /* Adicione um espaçamento interno para o conteúdo */
+    background-color: #000000; /* Fundo semi-transparente para destacar o conteúdo */
+    border-radius: 10px; /* Borda arredondada para o conteúdo */
+}
+
+#inner-container {
+    /* Adicione estilos específicos para a nova div interna */
+    text-align: center; /* Centralize o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno para o conteúdo interno */
+    background-color:#ffffff;
+}
+
+  /* Estilizando o botão "Enviar" */
+#btn-resposta {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Removendo a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Alterando o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+#btn-resposta:hover {
+    background-color: #0056b3; /* Cor de fundo quando o mouse estiver sobre o botão */
+}
+
+/* Estilizando o botão "Play" */
+#play-music {
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Removendo a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Alterando o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+#play-music:hover {
+    background-color: #1e7e34; /* Cor de fundo quando o mouse estiver sobre o botão */
+}
+
+/* Estilizando a caixa de entrada de texto */
+#resposta {
+    padding: 10px; /* Espaçamento interno da caixa de entrada */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 75%; /* Largura da caixa de entrada */
+    transition: border-color 0.3s ease; /* Transição suave da cor da borda */
+}
+
+#resposta:focus {
+    border-color: #007BFF; /* Cor da borda quando a caixa de entrada está em foco */
+}
+
+@keyframes background-color-change {
+    0% {
+        background-color: #52b788;
+    }
+    25% {
+        background-color: #40916c; /* Cor 2 */
+    }
+    50% {
+        background-color: #2d6a4f; /* Cor 3 */
+    }
+    100% {
+        background-color: #1b4332; /* Cor 4 */
+    }
+}
